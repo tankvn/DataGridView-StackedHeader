@@ -95,8 +95,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="StackedHeader\Header.vb" />
+    <Compile Include="StackedHeader\IStackedHeaderGenerator.vb" />
+    <Compile Include="StackedHeader\StackedHeaderDecorator.vb" />
+    <Compile Include="StackedHeader\StackedHeaderGenerator.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
