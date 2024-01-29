@@ -35,7 +35,7 @@
                         objHeaderTree(segment) = tempHeader
                         tempHeader.ColumnId = objColumn.Index
                     End If
-                    For i As Integer = 0 To UBound(segments)
+                    For i As Integer = 1 To UBound(segments)
                         segment = segments(i)
                         Dim found As Boolean = False
                         For Each child As Header In tempHeader.Children
